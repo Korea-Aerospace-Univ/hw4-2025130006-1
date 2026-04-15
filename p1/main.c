@@ -8,9 +8,9 @@ int main(void)
     do {
         scanf("%d", &b);
         cnt++;
-        if (a > b) printf("%d<%d\n",b, a); 
-        else if (a < b) printf("%d>%d\n", b, a);
-        else printf("%d==%d\n", a, b);
+        if (a > b) printf("%d<?\n",b); 
+        else if (a < b) printf("%d>?\n", b);
+        else printf("%d==?\n", b);
     } while (b != a);
     
     printf("%d", cnt);
