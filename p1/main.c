@@ -9,10 +9,10 @@ int main(void)
         scanf("%d", &b);
         cnt++;
         if (a > b) printf("%d<%d\n",b, a); 
-        if (a < b) printf("%d>%d\n", b, a);
+        else if (a < b) printf("%d>%d\n", b, a);
+        else printf("%d==%d\n", a, b);
     } while (b != a);
     
-    printf("%d==%d\n", a, b);
     printf("%d", cnt);
     
     return 0;
